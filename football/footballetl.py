@@ -32,4 +32,5 @@ class FootballETL(ETL):
         self._output["players.csv"] = players_df(df)
         self._output["statistic.csv"] = statistic_df(df)
         self._output["match.csv"] = match_df(df)
+        del self._df
         return self._output
